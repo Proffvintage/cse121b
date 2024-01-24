@@ -8,8 +8,6 @@ let fullName='Samuel Markson';
 let currentYear='2024';
 let profilePic='images/pic.png';
 
-
-
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById('name');
 const foodElement = document.getElementById('food');
@@ -22,12 +20,6 @@ yearElement.testContent= currentYear;
 imgElement.setAttribute('src', profilePic);
 imgElement.setAttribute('alt', `Profile image of ${fullName}`);
 
-
-
-
-
-
-
 /* Step 5 - Array */
 const favoriteFoods = ['Rice', 'Beans', 'Pasta', 'Chicken pie'];
 foodElement.innerHTML=favoriteFoods
@@ -38,9 +30,3 @@ favoriteFoods.shift(favFood);
 foodElement.innerHTML += `<br>${favoriteFoods}`;
 favoriteFoods.pop();
 foodElement.innerHTML += `<br>${favoriteFoods}`;
-
-
-
-
-
-
