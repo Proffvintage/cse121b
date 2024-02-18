@@ -1,0 +1,31 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Listing</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movies</h1>
+      <div class="sort-by">
+        <label for="sort-by-select">Sort by:</label>
+        <select id="sortBy">
+          <option value="popular">Popular</option>
+          <option value="top_rated">Top Rated</option>
+          <option value="now_playing">Now Playing</option>
+        </select>
+      </div>
+      <button id="fetchMovies">Fetch Movies</button>
+      <div id="movies"></div>
+    </div>
+    <footer>
+        &copy;<span id="year"></span> 🤗 | CSE 121b | project 🤗
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
